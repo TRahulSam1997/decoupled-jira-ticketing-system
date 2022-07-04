@@ -5,7 +5,7 @@ const sasl = username && password ? { username, password, mechanism: 'plain' } :
 const ssl = !!sasl
 
 const kafka = new Kafka({
-    clientId: 'npm-jira-notifier',
+    clientId: 'jira-ticketing',
     brokers: [process.env.KAFKA_BOOTSTRAP_SERVER],
     ssl,
     sasl
