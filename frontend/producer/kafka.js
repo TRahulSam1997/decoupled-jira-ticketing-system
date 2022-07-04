@@ -10,3 +10,5 @@ const kafka = new Kafka({
     ssl,
     sasl
 })
+
+module.exports = kafka
