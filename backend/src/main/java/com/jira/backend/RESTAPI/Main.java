@@ -13,8 +13,6 @@ public class Main {
 //                .addHeader("Accept", "application/json")
 //                .addHeader("Content-Type", "application/json")
 //                //Don't push this!
-//                .addHeader("Authorization", "Basic cmFodWxzYW1hcmFuYXlha2VAeWFob28uY29tOnd1ejJRWnQ2dlB0WUVNVjRtSXoyRTA5OQ==")
-//                .addHeader("Cookie", "atlassian.xsrf.token=6b0a0f0d-981b-44f6-9c4e-910a2edf7d5a_ae11946d66ee1b29c7ea74480d0a5124875b0f4c_lin")
 //                .build();
 //        Response response = client.newCall(request).execute();
 //    }
