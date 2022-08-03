@@ -1,16 +1,14 @@
 package com.jira.backend.RESTAPI;
 
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@SpringBootApplication
-public class Main {
+@RestController
+public class JiraController {
     private static final String JIRA_API_KEY = System.getenv("JIRA_API_KEY");
     private static final String JIRA_API_COOKIE = System.getenv("JIRA_API_COOKIE");
-    private static final Logger log = LoggerFactory.getLogger(Main.class);
 
-//    void API() {
+    //    void API() {
 //        OkHttpClient client = new OkHttpClient().newBuilder()
 //                .build();
 //        MediaType mediaType = MediaType.parse("application/json");
@@ -26,8 +24,9 @@ public class Main {
 //        Response response = client.newCall(request).execute();
 //    }
 
-    public static void main(String[] args) {
+    @PostMapping ("/issue")
+    public String postAnIssue() {
 
-        log.info("Hello World! -> " + JIRA_API_COOKIE);
+        return "";
     }
 }
