@@ -1,6 +1,8 @@
 package com.jira.backend.RESTAPI;
 
 public class Main {
+    private static final String JIRA_API_KEY = System.getenv("JIRA_API_KEY");
+    private static final String JIRA_API_COOKIE = System.getenv("JIRA_API_COOKIE");
 
 //    void API() {
 //        OkHttpClient client = new OkHttpClient().newBuilder()
@@ -13,11 +15,12 @@ public class Main {
 //                .addHeader("Accept", "application/json")
 //                .addHeader("Content-Type", "application/json")
 //                //Don't push this!
-//                .build();
+//                .addHeader("Authorization", JIRA_API_KEY)
+//                .addHeader("Cookie", JIRA_API_COOKIE)
 //        Response response = client.newCall(request).execute();
 //    }
 
     public static void main(String[] args) {
-
+        System.out.println("Hello World! -> " + JIRA_API_COOKIE);
     }
 }
